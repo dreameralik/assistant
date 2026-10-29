@@ -14,6 +14,7 @@ button { border: 0; border-radius: 12px; background: #6d7cff; color: #fff; paddi
 .section-title { display: flex; align-items: center; justify-content: space-between; } .section-title span { color: #9eaff0; }
 .list { list-style: none; padding: 0; margin: 10px 0 0; } .list li { display: flex; align-items: center; gap: 10px; padding: 11px 0; border-bottom: 1px solid #283754; } .list li:last-child { border-bottom: 0; }
 .list small { display: block; margin-top: 3px; color: #8494b5; font-size: .78rem; }
+.responses article { margin-top: 10px; padding: 12px; border-radius: 10px; background: #182642; white-space: pre-wrap; }
 .list label { flex: 1; } .list .done { color: #8390aa; text-decoration: line-through; } .delete { padding: 5px 9px; background: #512f46; font-size: .8rem; }
 .empty { margin: 12px 0 0; } .queue-info { margin: 10px 0 0; } .notes article { margin-top: 10px; padding: 11px; border-radius: 10px; background: #111b30; white-space: pre-wrap; }
 @media (max-width: 480px) { .composer { flex-direction: column; } .composer button { width: 100%; } }
