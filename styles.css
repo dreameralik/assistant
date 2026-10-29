@@ -1,0 +1,19 @@
+:root { color-scheme: dark; font-family: system-ui, -apple-system, sans-serif; background: #0b1020; color: #eef2ff; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(circle at top, #1b2b4a, #0b1020 55%); }
+.app { width: min(680px, 100%); margin: 0 auto; padding: 24px 16px 48px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.eyebrow { margin: 0 0 4px; color: #8fa5d8; font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; }
+h1, h2, p { margin-top: 0; } h1 { margin-bottom: 0; font-size: 2rem; } h2 { margin-bottom: 8px; font-size: 1.05rem; }
+.card { margin: 14px 0; padding: 18px; border: 1px solid #2a3a5d; border-radius: 18px; background: rgba(19, 29, 51, .88); box-shadow: 0 12px 30px rgba(0,0,0,.15); }
+.card p { color: #aebbd7; font-size: .92rem; }
+.status { padding: 7px 10px; border-radius: 999px; background: #263653; color: #b9c9ed; font-size: .8rem; white-space: nowrap; }
+.status.online { background: #164b3d; color: #9df0c7; }
+.composer { display: flex; gap: 8px; } input, textarea { width: 100%; border: 1px solid #3b4d75; border-radius: 12px; background: #111b30; color: #fff; padding: 12px; font: inherit; } textarea { min-height: 86px; resize: vertical; margin-bottom: 9px; }
+button { border: 0; border-radius: 12px; background: #6d7cff; color: #fff; padding: 11px 14px; font: inherit; font-weight: 650; cursor: pointer; } button:active { transform: translateY(1px); } button.secondary { background: #304367; width: 100%; }
+.section-title { display: flex; align-items: center; justify-content: space-between; } .section-title span { color: #9eaff0; }
+.list { list-style: none; padding: 0; margin: 10px 0 0; } .list li { display: flex; align-items: center; gap: 10px; padding: 11px 0; border-bottom: 1px solid #283754; } .list li:last-child { border-bottom: 0; }
+.list small { display: block; margin-top: 3px; color: #8494b5; font-size: .78rem; }
+.list label { flex: 1; } .list .done { color: #8390aa; text-decoration: line-through; } .delete { padding: 5px 9px; background: #512f46; font-size: .8rem; }
+.empty { margin: 12px 0 0; } .queue-info { margin: 10px 0 0; } .notes article { margin-top: 10px; padding: 11px; border-radius: 10px; background: #111b30; white-space: pre-wrap; }
+@media (max-width: 480px) { .composer { flex-direction: column; } .composer button { width: 100%; } }
